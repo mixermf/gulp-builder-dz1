@@ -11,22 +11,33 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$viking-s-name: 'viking_s';
-$viking-s-x: 0px;
-$viking-s-y: 0px;
-$viking-s-offset-x: 0px;
-$viking-s-offset-y: 0px;
-$viking-s-width: 100px;
-$viking-s-height: 114px;
-$viking-s-total-width: 100px;
-$viking-s-total-height: 114px;
-$viking-s-image: '../img/sprite.png';
-$viking-s: (0px, 0px, 0px, 0px, 100px, 114px, 100px, 114px, '../img/sprite.png', 'viking_s', );
-$spritesheet-width: 100px;
-$spritesheet-height: 114px;
-$spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($viking-s, );
-$spritesheet: (100px, 114px, '../img/sprite.png', $spritesheet-sprites, );
+$login-name: 'login';
+$login-x: 0px;
+$login-y: 0px;
+$login-offset-x: 0px;
+$login-offset-y: 0px;
+$login-width: 45px;
+$login-height: 45px;
+$login-total-width: 110px;
+$login-total-height: 45px;
+$login-image: 'sprite.png';
+$login: (0px, 0px, 0px, 0px, 45px, 45px, 110px, 45px, 'sprite.png', 'login', );
+$pass-name: 'pass';
+$pass-x: 65px;
+$pass-y: 0px;
+$pass-offset-x: -65px;
+$pass-offset-y: 0px;
+$pass-width: 45px;
+$pass-height: 45px;
+$pass-total-width: 110px;
+$pass-total-height: 45px;
+$pass-image: 'sprite.png';
+$pass: (65px, 0px, -65px, 0px, 45px, 45px, 110px, 45px, 'sprite.png', 'pass', );
+$spritesheet-width: 110px;
+$spritesheet-height: 45px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($login, $pass, );
+$spritesheet: (110px, 45px, 'sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

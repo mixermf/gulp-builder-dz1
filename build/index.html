@@ -14,38 +14,45 @@
     <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="content">
-        <div class="content__img"><img class="img"></div>
-        <div class="content__titles">
-          <h1 class="title"></h1>
-          <h2 class="subtitle"></h2>
-        </div>
-        <div class="content__icons">
-          <ul class="icon-list">
-            <li class="icon-list__icon"><a class="icon-list__link">
-                <svg class="svg">
-                  <title>icon</title>
-                  <use xlink:href="assets/img/svg/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="icon-list__icon"><a class="icon-list__link">
-                <svg class="svg">
-                  <title>icon</title>
-                  <use xlink:href="assets/img/svg/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="icon-list__icon"><a class="icon-list__link">
-                <svg class="svg">
-                  <title>icon</title>
-                  <use xlink:href="assets/img/svg/sprite.svg#link"></use>
-                </svg></a></li>
-          </ul>
-        </div>
+  <body></body>
+  <div class="wrapper">
+    <div class="autorize-btn"><a class="autorize-btn__link" href="autorize.html">Авторизоваться</a></div>
+    <div class="content">
+      <div class="content__img"><img class="img" src="/assets/img/ava_150.jpg" alt="Максим Никитин"></div>
+      <div class="content__titles">
+        <h1 class="title">Максим Никитин</h1>
+        <h2 class="subtitle">Личный сайт веб разработчика</h2>
       </div>
-      <div class="empty"></div>
+      <div class="content__icons">
+        <ul class="icon-list">
+          <li class="icon-list__icon"><a class="icon-list__link">
+              <svg class="vk">
+                <title>icon</title>
+                <use xlink:href="assets/img/svg/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li class="icon-list__icon"><a class="icon-list__link">
+              <svg class="git">
+                <title>icon</title>
+                <use xlink:href="assets/img/svg/sprite.svg#github"></use>
+              </svg></a></li>
+          <li class="icon-list__icon"><a class="icon-list__link">
+              <svg class="linked">
+                <title>icon</title>
+                <use xlink:href="assets/img/svg/sprite.svg#link"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="content__menu">
+        <ul class="menu-items">
+          <li class="menu-items__item"><a class="menu-items__link" href="#">Мои работы</a></li>
+          <li class="menu-items__item"><a class="menu-items__link" href="#">Обо мне</a></li>
+          <li class="menu-items__item menu-items__item--nonebrdr"><a class="menu-items__link" href="#">Блог</a></li>
+        </ul>
+      </div>
     </div>
-    <footer class="footer">
-      <div class="footer__text">&copy; Никитин Максим | создано с любовью в LoftSchool | 2016</div>
-    </footer>
-  </body>
+    <div class="empty"></div>
+  </div>
+  <footer class="footer">
+    <div class="footer__text">&copy; Никитин Максим | создано с любовью в LoftSchool | 2016</div>
+  </footer>
 </html>

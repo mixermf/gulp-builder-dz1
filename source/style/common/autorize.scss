@@ -1,0 +1,20 @@
+.content__titles--uppercase{
+  text-transform: uppercase;
+}
+.content__titles--uppercase .title{
+  font-size: 35px;
+  font-family: Sansus;
+  margin-top: 35px;
+  margin-bottom:40px;
+}
+.autorize-form__itput{
+  border:0 none;
+  height: 45px;
+}
+.autorize-form__itput--login{
+
+  &:before{
+    content: '';
+   // @include sprite($icon-login);
+  }
+}

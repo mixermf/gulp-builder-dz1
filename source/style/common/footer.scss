@@ -2,7 +2,10 @@
   position: relative;
   height:65px;
   margin-top:-65px;
+  text-align: center;
 }
 .footer__text{
-  color: #91a0b9;
+  color: $graycolor;
+  font-family: Roboto_light;
+
 }
