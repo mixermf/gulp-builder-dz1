@@ -1,3 +1,20 @@
+
+.content--autorize{
+  height:405px;
+}
+.content__menu--autorize{
+  width: 100%;
+}
+.menu-items__item--width50{
+  width: 50%;
+}
+.menu-items__link--nopadding{
+  padding:0;
+}
+.menu-items__link--width100{
+  width: 100%;
+}
+
 .content__titles--uppercase{
   text-transform: uppercase;
 }
@@ -7,14 +24,86 @@
   margin-top: 35px;
   margin-bottom:40px;
 }
-.autorize-form__itput{
+.autorize-form{
+  font-size:0px;
+}
+.autorize-form__holder{
+  width: 340px;
+
+  margin: 0 auto;
+  font-size:16px;
+  text-align: center;
+}
+.autorize-form__input{
   border:0 none;
   height: 45px;
-}
-.autorize-form__itput--login{
+  float: right;
+  width: 295px;
 
-  &:before{
-    content: '';
-   // @include sprite($icon-login);
-  }
+  font-family: Roboto_reg;
+  padding-left: 15px;
+
+}
+.autorize-form__holder--marginbottom10{
+  margin-bottom:10px;
+}
+.autorize-form__holder--marginbottom{
+  margin-bottom:20px;
+}
+.icon{
+  display: inline-block;
+}
+.icon-login {
+  @include sprite($login);
+}
+.icon-pass {
+  @include sprite($pass);
+}
+.autorize-form__label{
+  font: 16px Roboto_reg;
+  color: #d2d5da;
+  cursor: pointer;
+}
+.autorize-form__checkbox:not(checked){
+  position: absolute;
+  opacity: 0;
+}
+.autorize-form__checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 30px; /* оставляем слева от label место под псевдочекбокс */
+}
+.autorize-form__checkbox:not(checked) + label:before {
+  content: '';
+  top:-1px;
+  left:-5px;
+  position: absolute;
+  @include sprite($notchecked)
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.autorize-form__checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left:-20px;
+ //@include sprite($checked);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.autorize-form__checkbox:checked + label:before {
+  @include sprite($checked);
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.autorize-form__checkbox:checked + label:after {
+
+}
+/* Показываем получение фокуса. */
+.autorize-form__checkbox:focus + label:before {
+
+}
+.autorize-form__holder--width110{
+  width:110px;
+}
+.text-title{
+  font: 16px Roboto_reg;
+  font-weight: bold;
+  color: #d2d5da;
 }

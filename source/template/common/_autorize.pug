@@ -1,12 +1,33 @@
 .wrapper
     .autorize-btn
         a(href="#").autorize-btn__link Авторизоваться
-    .content
+    .content.content--autorize
         .content__titles.content__titles--uppercase
             h1.title Авторизация
         form.autorize-form(method="post",action="#")
-            input.autorize-form__itput.autorize-form__itput--login(name="login",placeholder="Логин")
-            input.autorize-form__itput.autorize-form__itput--pass(name="pass",placeholder="Пароль",type="password")
+            .autorize-form__holder.autorize-form__holder--marginbottom
+                i.icon.icon-login
+                input.autorize-form__input.autorize-form__input--login(name="login",placeholder="Логин")
+            .autorize-form__holder.autorize-form__holder--marginbottom
+                i.icon.icon-pass
+                input.autorize-form__input.autorize-form__input--pass(name="pass",placeholder="Пароль",type="password")
+            .autorize-form__holder.autorize-form__holder--marginbottom
+                input#checkbox.autorize-form__checkbox(type="checkbox" checked name="checkbox")
+                label.autorize-form__label(for="checkbox") Я человек
+            .autorize-form__holder.autorize-form__holder--marginbottom10
+                span.text-title Вы точно не робот?
+            .autorize-form__holder.autorize-form__holder--marginbottom
+                input#radio.autorize-form__radio(type="radio" name="radio" value="yes")
+                label.autorize-form__label(for="radio") Да
+                input#radio2.autorize-form__radio(type="radio" name="radio" value="no")
+                label.autorize-form__label(for="radio2") Не уверен
+
+        .content__menu.content__menu--autorize
+            ul.menu-items
+                li.menu-items__item.menu-items__item--width50
+                    a(href="#").menu-items__link.menu-items__link--width100.menu-items__link--nopadding На главную
+                li.menu-items__item.menu-items__item--nonebrdr.menu-items__item--width50
+                    a(href="#").menu-items__link.menu-items__link--width100.menu-items__link--nopadding Войти
 
     .empty
 
