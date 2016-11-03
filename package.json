@@ -27,6 +27,7 @@
     "rimraf": "2.5.2"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "normalize.css": "^4.1.1"
   }
 }

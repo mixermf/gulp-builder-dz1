@@ -1,0 +1,60 @@
+.wrapper
+    .autorize-btn
+        a(href="#").autorize-btn__link Авторизоваться
+    .content.content--transparent
+        .content__img
+            img.img(src='assets/img/ava_150.jpg', alt="Максим Никитин")
+        .content__titles
+            h1.title Максим Никитин
+            h2.subtitle Личный сайт веб разработчика
+    .bottom-box
+        .svg-trangle
+            //+svg('bg','svg-trangle__trangle','trangle')
+            svg(version="1.1" width="100%" height="160px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 100 160" preserveAspectRatio="none")
+                polygon(points="0,0 50,160 100,0 100,160 0,160")
+        .title-block
+            h2.title-block__title мои работы
+.slider
+    .slider__left
+        .slider__box
+            .slider__title
+            .slider__skills
+            .slider__link 
+    .slider__right
+        .slider__top
+            img.slider__fullimg.active(src='https://dummyimage.com/600x400/000/fff.jpg', data-name="Сайт школы онлайн образования", data-skills="css3, jq, html", data-link ="#")
+            img.slider__fullimg(src='https://dummyimage.com/600x400/fff/000.jpg', data-name="Сайт номер два", data-skills="css, jq, html5", data-link ="#")
+            img.slider__fullimg(src='https://dummyimage.com/600x400/0f0/f0f.jpg', data-name="Сайт номер три", data-skills="css, php, html", data-link ="#")
+        .slider__bottom
+            .nav__left
+            .nav__right
+.about
+    .title-block.title-block--transparent
+        h2.about__title.title-block__title Что обо мне<br>говорят
+    .about__feedback    
+        .about__quote
+            i.icon-quote.icon
+            .quote__wrap_image
+                img.quote__image(src='./assets/img/ava_150.jpg', alt="Ковальчук")
+            .quote__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .quote__signature
+                span.bold Ковальчук Дмитрий<br>
+                |— основатель Loftschool  
+        .about__quote
+            i.icon-quote.icon
+            .quote__wrap_image
+                img.quote__image(src='./assets/img/ava_150.jpg', alt="Ковальчук")
+            .quote__text Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            .quote__signature 
+                span.bold Зар Захаров<br>
+                |— преподаватель     
+    .about__form
+        h2.form__title связаться со мной
+        form.form(action="", method="post")
+            input.form__input(placeholder="Ваше имя")    
+            input.form__input(placeholder="Ваш имейл")
+            textarea.form__textbox Ваше сообщение
+            button.form__button Отправить
+            button.form__button Очистить
+.empty
+
